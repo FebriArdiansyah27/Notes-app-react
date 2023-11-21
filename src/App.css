@@ -1,0 +1,46 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-image: linear-gradient(to bottom, #0d253f, #343a40);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #c9d1d9;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin: 12px 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: transparent;
+  color: #c9d1d9;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 500px) {
+  .notes-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .notes-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .note-search input {
+    min-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .notes-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
